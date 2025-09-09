@@ -16,3 +16,9 @@ p <- ggplot(data = data_heatwaves,
 # export plot
 ggsave(plot = p,
        filename = "results/SST_plot.png")
+
+data("data_lionfish")
+ggplot(data = data_lionfish,
+           mapping = aes (x = lat, y = total_length_mm, 
+                          geom_point()))
+           
